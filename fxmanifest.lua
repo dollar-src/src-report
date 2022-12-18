@@ -3,18 +3,15 @@ games { 'gta5' }
 
 client_script "client.lua"
 
-server_script  {
- "server.lua"
-
+server_scripts{
+ "server.lua",
+ "config.lua"
 }
 
 ui_page {
 	'html/index.html',
 }
 
-shared_script {
-	'shared.lua'
-}
 files {
 	'html/fonts/*.woff',
 	'html/fonts/*.woff2',
